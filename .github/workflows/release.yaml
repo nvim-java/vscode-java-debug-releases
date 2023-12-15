@@ -4,9 +4,8 @@ permissions:
   contents: write
 
 on:
-  push:
-  pull_request:
-    branches: [main]
+  schedule:
+    - cron: "0 0 * * *"
 
 jobs:
   version_check:
