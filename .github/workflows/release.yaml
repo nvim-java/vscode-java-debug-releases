@@ -45,9 +45,9 @@ jobs:
     steps:
       - name: Check with current version
         run: |
-          # wget "https://github.com/microsoft/java-debug/archive/refs/tags/${VERSION}.tar.gz"
-          # tar xf "${VERSION}.tar.gz" -C . --strip-components=1
-          git clone "https://github.com/microsoft/java-debug.git" .
+          wget "https://github.com/microsoft/java-debug/archive/refs/tags/${VERSION}.tar.gz"
+          tar xf "${VERSION}.tar.gz" -C . --strip-components=1
+          # git clone "https://github.com/microsoft/java-debug.git" .
 
       - name: Set up JDK 17
         uses: actions/setup-java@v1
